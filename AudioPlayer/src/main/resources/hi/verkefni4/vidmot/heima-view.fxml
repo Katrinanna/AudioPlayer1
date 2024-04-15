@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="20.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni4.vidmot.AudioPlayerController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="fxInnskraning" text="Skráðu þig inn hér:">
+      <font>
+         <Font size="17.0" />
+      </font></Label>
+    <Button onAction="#onLogin" text="Skrá inn">
+      <font>
+         <Font size="16.0" />
+      </font></Button>
+   <Label text="Veldu lagalista:">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+    <GridPane fx:id="fxListar" hgap="6.0" prefHeight="100.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Button maxHeight="100.0" maxWidth="183.0" mnemonicParsing="false" onAction="#onVeljaLista" prefHeight="100.0" prefWidth="183.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <graphic>
+                    <ImageView fx:id="fxListi1" fitHeight="111.0" fitWidth="163.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="listi1">
+                  <image>
+                     <Image url="@media/listi1.jpg" />
+                  </image>
+               </ImageView>
+                </graphic></Button>
+            <Button maxHeight="100.0" maxWidth="183.0" mnemonicParsing="false" onAction="#onVeljaLista" prefHeight="100.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <graphic>
+                    <ImageView fx:id="fxListi2" fitHeight="111.0" fitWidth="163.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="listi2">
+                  <image>
+                     <Image url="@media/listi2.jpg" />
+                  </image></ImageView>
+                </graphic></Button>
+        </children>
+    </GridPane>
+</VBox>

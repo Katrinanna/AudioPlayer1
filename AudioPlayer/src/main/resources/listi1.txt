@@ -1,0 +1,4 @@
+media/sample-3s.mp3 sample-3s 3000 media/sample3.jpg
+media/sample-6s.mp3 sample-6s 6000 media/sample6.jpg
+media/sample-9s.mp3 sample-9s 9000 media/sample9.jpg
+media/sample-15s.mp3 sample-15s 15000 media/sample15.jpg
