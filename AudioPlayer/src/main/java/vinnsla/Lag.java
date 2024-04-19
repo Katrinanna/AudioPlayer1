@@ -43,7 +43,5 @@ public class Lag {
 
     }
 
-    public static void main(String[] args) {
 
-    }
 }

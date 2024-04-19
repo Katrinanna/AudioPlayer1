@@ -221,7 +221,5 @@ public class ListiController implements ViewSwitcher.ControllerInterface {
     }
 
 
-    public static void main(String[] args) {
 
-    }
 }

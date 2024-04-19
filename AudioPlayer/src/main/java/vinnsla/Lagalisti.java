@@ -16,10 +16,12 @@ public class Lagalisti {
     private int valinnListi;
 
     //tómur smiður
-    public Lagalisti() {}
+    public Lagalisti() {
+    }
 
     /**
      * getter fyrir
+     *
      * @return
      */
     public ObservableList<Lag> getListi() {
@@ -57,6 +59,7 @@ public class Lagalisti {
 
     /**
      * getter fyrir valda listann
+     *
      * @return valdi listinn
      */
     public int getValinnListi() {
@@ -65,11 +68,12 @@ public class Lagalisti {
 
     /**
      * setter fyrir valdinn lista
+     *
      * @param valinnListi valinn listi
      */
     public void setValinnListi(int valinnListi) {
         this.valinnListi = valinnListi;
     }
-
-    public static void main(String[] args) {}
 }
+
+
